@@ -17,6 +17,7 @@ return nline;
 path = 'cleandata'
 filelist=files(path)
 for infile in filelist:
+for currentFile in glob.glob( os.path.join(path, '*') ):
 	print("current file is: " + infile)
 
 
